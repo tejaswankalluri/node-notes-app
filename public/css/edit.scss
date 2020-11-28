@@ -60,3 +60,10 @@ body{
         }
     }
 }
+@media screen and (min-width: 655px) {
+    .input-container {
+        .input-box {
+            width: 50rem;
+        }
+    }
+}
