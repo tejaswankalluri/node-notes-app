@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
 const path = require("path")
-const port = 3000
+const port = process.env.PORT || 3000
 const templatepath = path.join(__dirname + "/template/views")
 // mongodb://127.0.0.1:27017/notesapp?readPreference=primary&appname=MongoDB%20Compass&ssl=false
 require("dotenv").config()
