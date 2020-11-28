@@ -1,0 +1,62 @@
+@import "_colors";
+@import "_variables";
+body{
+    background-color: $backgroundcolor;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 4rem;
+    .input-box {
+        position: relative;
+        padding: 2rem;
+        width: 100%;
+        min-height: 10rem;
+        background-color: $inputbc;
+        border-radius: 0.7rem;
+        box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+
+        form {
+            input[type="text"] {
+                background-color: $inputbc;
+                width: 95%;
+                padding: 1rem;
+                margin: 1rem 0rem;
+                border: none;
+                border-bottom: 0.2rem solid black;
+                transition: border 0.4s ease;
+                font-weight: bold;
+                font-size: 2.3rem;
+            }
+            input[type="text"]:focus {
+                border-bottom: 0.2rem solid $maincolor;
+            }
+            textarea {
+                width: 95%;
+                padding: 1rem;
+                margin: 1rem 0rem;
+                background-color: $inputbc;
+                border: none;
+                border-bottom: 0.2rem solid black;
+                transition: border 0.4s ease;
+            }
+            textarea:focus {
+                border-bottom: 0.2rem solid $maincolor;
+                // height: 15rem;
+            }
+            button{
+                position: absolute;
+                background-color: $maincolor;
+                padding: 1.2rem 3rem;
+                color: white;
+                bottom: -1.5rem;
+                left: 50%;
+                border-radius: 3rem;
+                transform: translateX(-50%);
+                cursor: pointer;
+            }
+        }
+    }
+}

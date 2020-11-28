@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:wght@400;600&display=swap");
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 3rem 3rem;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f7f1e3;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5rem 4rem;
+}
+
+.input-container .input-box {
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+  min-height: 10rem;
+  background-color: #f7f7f7;
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+.input-container .input-box form input[type="text"] {
+  background-color: #f7f7f7;
+  width: 95%;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  border: none;
+  border-bottom: 0.2rem solid black;
+  -webkit-transition: border 0.4s ease;
+  transition: border 0.4s ease;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.input-container .input-box form input[type="text"]:focus {
+  border-bottom: 0.2rem solid #4a69bd;
+}
+
+.input-container .input-box form textarea {
+  width: 95%;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  background-color: #f7f7f7;
+  border: none;
+  border-bottom: 0.2rem solid black;
+  -webkit-transition: border 0.4s ease;
+  transition: border 0.4s ease;
+}
+
+.input-container .input-box form textarea:focus {
+  border-bottom: 0.2rem solid #4a69bd;
+}
+
+.input-container .input-box form button {
+  position: absolute;
+  background-color: #4a69bd;
+  padding: 1.2rem 3rem;
+  color: white;
+  bottom: -1.5rem;
+  left: 50%;
+  border-radius: 3rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+/*# sourceMappingURL=edit.css.map */

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit notes</title>
+    <link rel="stylesheet" href="css/edit.css">
+    
+</head>
+
+<body>
+    <div class="input-container">
+        <div class="input-box">
+            <form action="/note/{{findNotes._id}}" method="post">
+                <input type="text" name="title" id="#title-input" autocomplete="off" placeholder="Title.."
+                    value="{{findNotes.title}}"><br>
+                <textarea name="body" id="#body-input" cols="10" rows="5"
+                    placeholder="Type to add notes">{{findNotes.body}}</textarea>
+                <button type="submit">Done </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Notes app</title>
+</head>
+
+<body>
+    <div class="page-title">
+        <h1>Notes app</h1>
+    </div>
+    <div class="input-container">
+        <div class="input-box">
+            <form action="" method="post">
+                <input type="text" name="title" id="#title-input" autocomplete="off" placeholder="Title.."><br>
+                <textarea name="body" id="#body-input" cols="10" rows="5" placeholder="Type to add notes"></textarea>
+                <button type="submit">Add </button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            
+            {{!-- <article>
+                <div class="text">
+                    <h3>Seamlessly visualize quality</h3>
+                    <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+                </div>
+                <div class="delete">
+                    <a href="http://"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                </div>
+                <div class="edit">
+                    <a href="http://"><i class="fa fa-pencil" aria-hidden="true"></i></i></a>
+                </div>
+            </article> --}}
+
+           {{#each Notes1}}
+            <article>
+                <div class="text">
+                    <h3>{{this.title}}</h3>
+                    <p>{{this.body}}</p>
+                </div>
+                <div class="delete">
+                    <a href="/delete/{{this._id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                </div>
+                <div class="edit">
+                    <a href="/note/{{this._id}}"><i class="fa fa-pencil" aria-hidden="true"></i></i></a>
+                </div>
+            </article>
+            {{/each}}
+            
+            
+        </div>
+    </div>
+</body>
+
+</html>
