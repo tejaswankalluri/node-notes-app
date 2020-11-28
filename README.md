@@ -9,7 +9,7 @@ In this web app you can add notes and sve it forever
  
     `npm install`
     
-    `cd node-crud-user-admin`
+    `cd node-notes-app`
  - Add .env file as shown in the .env_sample file 
  - Configure Mongodb and add the link in .env file
  - Type 👇 in terminal
